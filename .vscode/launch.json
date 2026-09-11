@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Exercise solution (solution.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/solution.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "iot_monitor CLI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "iot_monitor",
+      "args": ["--csv", "data/lecture1_readings.csv"],
+      "console": "integratedTerminal",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" }
+    }
+  ]
+}
